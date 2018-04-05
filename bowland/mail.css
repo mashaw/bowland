@@ -1,0 +1,176 @@
+body {font-family: Helvetica, Arial, sans-serif;color:#333;line-height:1.5}
+
+
+.wrapper {max-width:800px;width:auto}
+
+img {float:right;margin: 0 0 1em 1em}
+
+img.email-banner {float:none;margin: 0}
+
+h1  {font-size:24px;font-weight:normal}
+
+h2  {font-size:18px;font-weight:normalfont-weight:normal;
+    color:#fff;
+    font-size:1.5em;
+    padding:0.25em 0.5em;
+    margin:0}
+
+.field-name-field-section-heading  h3  {font-size:18px;font-weight:normal}
+
+li , p  {font-size:13px} 
+
+strong , b  {}
+
+ul {padding-left:1em}
+
+
+
+.field-name-field-date-month  {margin: 1em 0  ;} 
+
+.field-collection-view  {
+padding:  0;
+  margin: 0  ;
+  border-bottom: none}
+
+ .field-label {
+    color:#fff;
+    background:#f58345;
+    font-size:1.5em;
+    padding:0.25em 0.5em;
+     margin: 1em 0;
+	 clear:both}
+
+hr {
+    clear:both;
+    float:none;
+    height:1px;
+    border:none;
+    border-bottom:1px solid #999}
+
+.mail-footer {
+    clear:both;
+    margin:0.5em 0;
+    padding: 8px 12px;
+  background-color: #f58345;}
+
+
+.mail-footer h5 , 
+.mail-footer p  {font-size:0.8em;line-height: 1.2; color:#fff;margin:0}
+
+.mail-footer h5 {font-weight: bold}
+
+.mail-footer a ,
+.mail-footer a:link ,
+.mail-footer a:visited   {color:#fff}
+
+.view-id-mail_links_2   {
+  float: left;
+  width: 24%;
+  margin-top: 0px;
+  margin-right: 1.33%;
+  margin-bottom: 1em;
+  margin-left: 0px;
+}
+
+.field-collection-view {
+	padding: 0;
+	margin: 0;
+	border-bottom: none
+}
+
+.field-collection-container {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.field-type-field-collection {
+	margin-bottom: 1em;
+	clear: both
+}
+
+.field-type-field-collection .field-label,
+.view-id-mail_links_2 h2 {
+	font-weight: normal;
+	color: #fff;
+	background:#f58345;
+	font-size: 1.5em;
+	padding: 0.25em 0.5em;
+	margin: 0em 0 1em 0
+}
+
+
+.field-enjoyment   {background: #f58345}
+.view-display-id-entity_view_2 h2 {background: #f58345}
+
+ .field-community  {background: #aa1054}
+ .view-display-id-entity_view_4 h2 {background: #aa1054}
+
+.field-business  {background: #367db2}
+.view-display-id-entity_view_1 h2 {background: #367db2}
+
+ .field-wildlife  {background: #839c85}
+.view-display-id-entity_view_3 h2 {background: #839c85}
+
+
+
+.field-name-field-section-heading h3 {
+	margin: 0 0 0.5em 0
+}
+
+.field-name-field-image {
+	float: right;
+	clear:right;
+	margin: 0 0 1em 1em
+}
+
+.field-collection-view-final hr {
+	display: none
+}
+
+.mail-footer {
+	clear: both;
+	margin: 0.5em 0;
+	padding: 8px 12px;
+	background-color: #f58345;
+}
+
+.mail-footer h5,
+.mail-footer p {
+	font-size: 0.8em;
+	line-height: 1.2;
+	color: #fff;
+	margin: 0
+}
+
+.mail-footer h5 {
+	font-weight: bold
+}
+
+.mail-footer a {
+	color: #fff
+}
+
+.view-id-mail_links_2 {
+	float: left;
+	width: 24%;
+	margin: 0 1.33% 1em 0
+}
+
+.view-display-id-entity_view_3 {
+	margin-right: 0
+}
+
+.view-id-mail_links_2 .view-header p {
+	margin: 0
+}
+
+.view-id-mail_links_2 .view-header img {
+	width: 100%;
+	height: inherit
+}
+
+.view-id-mail_links_2 ul {
+	padding-left: 15px;
+}
+
+	

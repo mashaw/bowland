@@ -1,0 +1,567 @@
+// Default variables.
+@import 'default-variables';
+// Bootstrap Framework.
+@import '../bootstrap/assets/stylesheets/bootstrap';
+// Base-theme overrides.
+@import 'overrides';
+
+// Base-theme overrides.
+
+@import 'fonts';
+
+@import 'mixins';
+
+
+body {padding:0;margin:0;
+    &:not(.cke_editable) {
+        background: #ccc;
+    }
+}
+
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1140px;
+    background-color: #fff;
+    &.navbar {
+        @include border-radius(0);
+        border: none;
+        margin-bottom: 0;
+        margin-top: 0!important;
+    }
+    &.main-container {
+        padding-bottom: 15px;
+    }
+    &.footer {
+        background-color: $darkgrey;
+        color: $grey;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: none;
+        a {
+            color: $grey;
+        }
+    }
+}
+
+
+
+#page-header {
+    padding: 0 30px 10px 30px;
+    margin: 10px -30px 20px -30px;
+    border: none;
+    background-color: #fff;
+    border-bottom: none;
+    .page-header {
+        padding-bottom: 9px;
+        margin: 15px 0 0 0;
+        border-bottom: none;
+    }
+    .breadcrumb + .page-header {margin-top:0;}
+}
+
+
+.navbar .logo {
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+
+
+
+/*/ ===  Navigation === /*/
+
+a {
+  color: $brown;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color:inherit;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+
+/*/ === User links === /*/
+
+#block-system-user-menu {
+    float: right;
+    clear: right;
+    padding-bottom:0.5em;
+    .menu li {
+        display: inline-block;
+        a {
+            color: $darkgrey;
+            padding: 0;
+            margin: 0 0.5em;
+            &:hover {
+                color: $black;
+                text-decoration: none;
+                background: transparent;
+            }
+            @include fancy_link;
+        }
+        &.last a {
+            margin-right: 0
+        }
+    }
+}
+
+/*/ === Social links === /*/
+
+    .block.social-links {
+        float: right;
+        clear: right;
+        @include kill-list();
+        padding-bottom:0.5em;
+        .menu a {
+            font-size: 0;
+            margin-left: 12px;
+            &:before {
+                font-size: 32px;
+                color: $darkgrey;
+                display: inline-block;
+                font-family: 'icons';
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            &[href*="facebook"]:before {
+                content: '\f308';
+            }
+            &[href*="twitter"]:before {
+                content: '\f304';
+            }
+            &[href*="youtube"]:before {
+                content: '\f16a';
+            }
+            &[href*="flickr"]:before {
+                content: '\f16e';
+            }
+            &[href*="vimeo"]:before {
+                content: '\f194';
+            }
+            &:hover:before {
+                color: $black;
+            }
+        }
+    }
+
+/*/ === Search box === /*/
+
+
+.navbar #block-search-form {
+    float: right;
+    clear: right;
+    margin-bottom: 0;
+}
+
+/*/  ===  Main menu === /*/
+
+nav[role=navigation] {
+    background: #dedede;
+    margin-right: -15px;
+    margin-left: -15px;
+    clear: both;
+    a {color:$darkgrey;}
+}
+
+
+.block-menu-block {
+    .menu a {
+        display: block;
+        color: $darkgrey;
+        padding: 10px 15px;
+        background: #dedede;
+        border-bottom: 1px solid #fff;
+        &:hover {
+            color: $black;
+            text-decoration: none;
+            background: #ededed;
+        }
+        &.active {color: $black;
+            background: #ededed;
+            cursor: default;
+        }
+    }
+    .menu .menu a {
+        padding: 8px 15px 8px 20px;
+    }
+    .menu .menu .menu a {
+        padding: 6px 15px 6px 25px;
+    }
+    &#block-menu-block-3 .menu a {}
+    &#block-menu-block-4 .menu a {}
+}
+    #block-menu-block-4 { display: none;}
+
+@media (min-width: 768px) {
+    
+    #block-menu-block-4 {display:block;}
+    #block-menu-block-3 {
+        li {
+            display: inline-block;
+            ul {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    html {
+        height: 100%;
+        position: relative;
+        .navbar {
+            position: static
+        }
+        nav[role=navigation] {
+            position: absolute;
+            z-index: 150;
+            margin: 0;
+            top: 0;
+            left: -100%;
+            width: 40%;
+            bottom: 0;
+            height: 100%;
+            transition: left 0.3s ease;
+            background: #dedede;
+            display: block;
+            border-right: 1px solid $darkgrey;
+        }
+        .toggle-wrapper {
+            background: #dedede;
+            margin-right: -15px;
+            margin-left: -15px;
+            clear:both;
+            #toggler {
+                position: relative;
+                padding: 1px 6px 1px 12px;
+                width: 100%;
+                display: inline-block;
+                float: none;
+                margin-left: 0;
+                transition: margin-left 0.3s ease-in-out;       
+                label {
+                    position: absolute;
+                    color: $darkgrey;
+                    float: left;
+                    left: 54px;
+                    top: 6px;
+                }
+                &:hover label {
+                    color: $black;
+                }
+            }
+        }
+    }
+    .overlay {
+        .toggle-wrapper {
+            #toggler  {
+                margin-left: 40%;
+                width: 60%;
+                transition: margin-left 0.3s  ease-in-out; 
+
+            }
+        }
+        nav[role=navigation] {
+            left: 0;
+            box-shadow: 3px 0px 3px 3px rgba(0, 0, 0, 0.1);
+            background: #dedede;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        .overlay {
+            .toggle-wrapper {
+                #toggler  {
+                    margin-left: 60%;
+                    width: 40%;
+                }
+            }
+            nav[role=navigation] {
+                width: 60%;
+                left: 0;
+            }
+        }
+    }
+}
+
+
+/*/  ===  Breadcrumb === /*/
+
+.breadcrumb {
+    color: $darkgrey;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+    a {
+        color: $darkgrey;
+        &:hover {
+            color: $black;
+            text-decoration: none;
+        }
+        @include fancy_link;
+    }
+    >li+li:before {
+        content: "> ";
+        padding: 0 5px;
+        color: $darkgrey;
+    }
+}
+
+/*/  ===  Level 2 nav === /*/
+
+
+.region-sidebar-second {
+    .block-menu-block {
+        background: #dedede;
+    }
+}
+
+
+
+
+
+    @media (min-width: 768px) {
+        #block-menu-block-3 {
+            .menu a {
+                border: none;
+                border-left: 1px solid #fff;
+            }
+            .menu .last a {
+                border-right: 1px solid #fff;
+            }
+        }
+        .container-fluid>.navbar-header {
+            margin-right: -15px;
+            margin-left: -15px;
+            nav[role=navigation] {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+        }
+        .navbar-default .navbar-nav>li {
+            margin-right: 10px
+        }
+        .navbar-nav {
+            float: right;
+            margin: 0;
+        }
+    }
+    
+    .navbar-default .navbar-collapse,
+ .navbar-default .navbar-form {
+     border: none
+ }
+ 
+
+
+.navbar-header {
+    float: none;
+}
+
+.page-header ,
+#content-section   {
+    padding-left: 15px;
+    padding-right: 15px;
+    border:none;
+}
+
+
+
+ul.tabs--primary.nav.nav-tabs ,
+ul.action-links  {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+/*/  ===  Link types === /*/
+
+
+.main-container {
+    a[target="_blank"],
+    a[href$=".xls"],
+    a[href$=".xlsx"],
+    a[href$=".ppt"],
+    a[href$=".docx"],
+    a[href$=".pdf"] {
+        &:after {
+            @include icon-font('\f0f6');
+            font-size: 1.2em;
+            margin-left: 0.25em;
+            text-decoration: none;
+            margin: 0 0 0 0.5em;
+            &:hover {
+                text-decoration: none
+            }
+        }
+        &[target="_blank"] {
+            &:after {
+                content: '\f08e';
+            }
+        }
+    }
+}
+/*/  ===  Views === /*/
+
+
+
+    /*/  ===  FOOTER === /*/
+    
+    .footer {
+        margin: 0;
+        padding: 0;
+        border-top: none;
+        .container-fluid {
+            padding-bottom: 15px;
+        }
+        .region-footer {
+            background: #fff;
+            h2.block-title {
+                color: #ccc;
+                font-size: 24px;
+                margin: 0 0 10px 0;
+            }
+            @media (min-width: 420px) {
+                #block-imageblock-4 {
+                    float: left
+                }
+                #block-imageblock-5 {
+                    float: right
+                }
+            }
+            #block-block-1 {
+                margin-bottom: 1em;
+                margin-top: 1em;
+                font-size: 13px;
+                @media (max-width: 768px) {
+                    clear: both;
+                    width: 100%;
+                }
+                text-align: center;
+                h4 {
+                    font-size: 14px;
+                }
+            }
+            /*/ --- Footer menu --- /*/
+            .block-menu-block {
+                background: $darkgrey;
+                padding: 15px;
+                margin-bottom: 15px;
+                .menu a {
+                    color: $grey;
+                    padding: 0;
+                    margin: 0;
+                    border: none;
+                    background: transparent;
+                    @include fancy_link;
+                    &:hover {
+                        color: #fff;
+                        text-decoration: none;
+                        background: transparent;
+                        border-color: #fff;
+                    }
+//                    &.active:hover {
+//                        color: $grey;
+//                        &:after {
+//                            border: none;
+//                        }
+//                    }
+                }
+                div>.menu>li {
+                    display: inline-block;
+                    float: left;
+                    &:not(.last) {
+                        margin-right: 15px;
+                    }
+                    >a {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+
+/*/  ===  MAP PAGE === /*/
+
+    .block.map {
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul {padding-top:15px;
+        li {
+            display: inline-block;
+            margin-right: 1em;
+            img {
+                width: 38px;
+                height: inherit;
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+
+
+.leaflet-top, .leaflet-bottom {
+
+    z-index: 99;
+
+}
+
+
+.leaflet-control-reset {
+    padding-top: 2px
+}
+
+a.fa.fa-repeat:before {
+    font-size: 1.1em;
+    color: #666;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    content: "\e031";
+}
+
+
+/*/  ===  Facebook block === /*/
+
+
+.block.facebook {
+    margin-bottom: 15px;
+    background:$lightgrey;
+    blockquote {
+        background: transparent;
+        padding: 0
+    }
+    .block-title {
+        font-size: 24px;
+        background:$lightgrey;
+        padding: 4px 8px;
+        margin:0;
+    }
+}

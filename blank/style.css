@@ -1,0 +1,25 @@
+body {margin:0px 5%;background:#ededed}
+
+
+h2 {font-size:1.5em;margin: 0 0 0.5em 0}
+
+.node-towns-and-villages .field-name-field-image ,
+.page-pop-up     .field-name-field-image  img  {
+    width:100%;
+    height:inherit;
+    float:none;
+    clear:both;
+    margin:  0
+
+}
+
+
+.field  {margin:0.25em 0}
+
+
+.field-name-field-download {margin-top:0.5em} 
+
+.node-towns-and-villages .field-name-field-image  {margin:0}
+
+.page-pop-up p  {    float:none;
+    clear:both;}

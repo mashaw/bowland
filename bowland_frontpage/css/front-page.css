@@ -1,0 +1,454 @@
+@import "fonts/font.css";
+
+/* === Homepage flexslider === */
+
+.region-highlighted {
+    margin: 1em 0;
+    clear: both
+}
+.flexslider ol,
+.flexslider ul,
+.flexslider li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+ul.slides li {
+    position: relative;
+}
+.flexslider {
+    border: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0;
+    position: relative;
+}
+.flexslider ul.slider li {} #flexslider-1 .slides img {
+    width: 100%;
+    float: none;
+    display: block;
+}
+#flexslider-1 .banner-text {
+    float: none;
+    width: 25%;
+    padding: 10px 1.5%;
+    background: #ebebeb;
+    top: 0;
+    left: 0;
+    position: absolute
+}
+#flexslider-1 .banner-text h2 {
+    font-size: 1.15em;
+    line-height: 1.2;
+    color: #000;
+    text-transform: none;
+    margin: 0 0 4px 0
+}
+#flexslider-1 .banner-text p {
+    font-size: 0.85em;
+    line-height: 1.3;
+    margin: 2px 0 0 0;
+}
+#flexslider-1 .banner-text p.more {} #flexslider-1 .banner-text a:link,
+#flexslider-1 .banner-text a:visited {
+    text-decoration: none
+}
+#flexslider-1 .banner-text a:hover {
+    text-decoration: underline
+}
+/* Control Nav */
+
+#flexslider-1 .flex-control-nav {
+    width: 100%;
+    float: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    z-index:auto;
+}
+.flex-control-nav li {
+    margin: 0;
+    display: inline-block;
+    zoom: 1;
+    margin: 0 5px;
+}
+.flex-control-paging li a {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    border: 2px solid #666;
+    box-shadow: none;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 1;
+    display: block;
+    background: #fff;
+    cursor: pointer;
+    text-indent: 0px;
+    color: #666;
+    padding: 3px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none
+}
+.flex-control-paging li a:hover {
+    background: #fcffa6;
+    color: #666;
+    text-decoration: none
+}
+.flex-control-paging li a.flex-active {
+    background: #fff;
+    color: #666;
+    border: 2px solid #666;    
+    
+
+    cursor: default;
+    text-decoration: none
+}
+.flex-control-nav li a:hover,
+.flex-control-nav li a:active {
+    background: #fcffa6;
+       border: 2px solid #666;   
+    color: #666;
+    text-decoration: none
+}
+.flex-control-nav li a.flex-active {
+    background: #666;
+    color: #fff;
+    cursor: default;
+}
+.flex-direction-nav a:link,
+.flex-direction-nav a:visited {} .flex-direction-nav a {
+    top: auto;
+    bottom: 0;
+    color: rgba(0, 0, 0, 1);
+    text-shadow: none;
+    transition-property: none;
+    transition-duration: none;
+    transition-timing-function: none;
+    transition-delay: none;
+}
+.flex-direction-nav .flex-next {
+    right: 10px;
+    opacity: 1;
+}
+.flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+}
+.flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+}
+.flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+}
+.flexslider:hover .flex-prev {
+    opacity: 1;
+}
+.flexslider:hover .flex-next {
+    opacity: 1;
+    
+    
+}
+
+
+/* --- Block row grids --- */
+.content_row {
+    width:101.5%;
+    margin-left:-1.5%;
+    clear:both
+}
+
+.content_row .block {
+    float:left
+}
+
+.content_row .block,.content_row .one-column {
+    width:23.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+.content_row .two-column {
+    width:48.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+.content_row .three-column {
+    width:73.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+.content_row .four-column {
+    width:98.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+ .content_row .block img {width:100%}   
+
+
+@media all and (max-width: 960px) {
+
+}
+
+@media all and (max-width: 768px) {
+.content_row .block,.content_row .one-column,.content_row .two-column {
+    width:48.5%;
+    margin-left:1.5%;
+    float:left
+}
+ .content_row .block img {width:100%}   
+    
+.content_row .two-column {
+    width:98.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+.content_row .three-column,.content_row .four-column {
+    width:98.5%;
+    margin-left:1.5%;
+    float:left
+}
+}
+
+@media all and (max-width: 480px) {
+.content_row .one-column,
+    .content_row .two-column,
+    .content_row .three-column,
+    .content_row .four-column {
+    width:98.5%;
+    margin-left:1.5%;
+    float:left
+}
+}
+
+
+
+/* --- Home page blocks --- */
+.block-body ul,.block-body li {
+    padding:0;
+    margin:0;
+    list-style:none
+}
+
+.block-body li,.views-field-field-walk-of-the-moth {
+    line-height:1.2
+}
+
+.block-body li a:link,.block-body li a:visited,.views-field-field-walk-of-the-moth a:link,.views-field-field-walk-of-the-moth a:visited {
+    color:#666;
+    text-decoration:none
+}
+
+.block-body li a:hover,.views-field-field-walk-of-the-moth a:hover {
+    color:#aa1054;
+    text-decoration:underline
+}
+
+.block-body li span,.block-body li em,.views-field-field-walk-of-the-moth span {
+    font-size:88%;
+    font-style:normal;
+    color:#999
+}
+/* --- Walk of the month block --- */
+
+
+#block-nodeblock-3351 .view-content {
+    margin: 0;
+}
+
+
+
+#block-nodeblock-3351 .links.inline  {display:none}
+
+
+/* --- Photo of the month block --- */
+
+#block-views-visitor-photos-block-1 .views-field-field-image-descrition { }
+
+ .more-photo-link {float:right;}
+
+.more-photo-link a:link ,
+.more-photo-link a:visited {
+  color: #666;
+  text-decoration: none}
+
+  .more-photo-link a:hover { color:#aa1054 ;text-decoration:underline}
+
+
+
+
+
+#block-views-visitor-photos-block-1  .views-field-field-image-descrition  ,
+#block-views-visitor-photos-block-1 .views-field-nothing    {line-height:1.2}
+
+
+
+
+#block-views-visitor-photos-block-1 h2.block-title a:link ,
+#block-views-visitor-photos-block-1 h2.block-title a:visited {color:#FFF}
+
+
+
+
+
+/* --- Twitter block --- */
+
+#block-twitter-block-1 h2.block-title {
+    margin: 0;
+    padding-left: 8px
+}
+#block-twitter-block-1 h2.block-title:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f099";
+    padding-right: 4px
+}
+#block-twitter-block-1 {
+     background: #ebebeb;
+     background:#f3f3f3
+}
+#twitter-widget-0 {
+    padding: 0 4px
+}
+/* --- Weather block --- */
+
+#block-weather-system-1 h2.block-title {}
+
+#block-weather-system-1 {} #block-weather-system-1 img {
+    margin-top: 3px;
+    width: 50px;
+    height: inherit
+}
+#block-weather-system-1 .weather {
+    font-size: .9em;
+    line-height: 1.1
+}
+#block-weather-system-1 .weather p {
+    margin: 2px 0
+}
+#block-weather-system-1 .report {
+    border-bottom: 1px solid #E6E6E6;
+    padding: 6px
+}
+#block-weather-system-1 .weather p .condition {
+    line-height: 1.75
+}
+#block-weather-system-1 .weather p .temp {
+    font-size: 175%
+}
+#block-weather-system-1 .weather .forecast {
+    text-align: center;
+    background: #fff;
+    margin: 0;
+    padding: 3px
+}
+#block-weather-system-1 .weather .forecast a:link,
+#block-weather-system-1 .weather .forecast a:visited {
+    text-decoration: none
+}
+#block-weather-system-1 .weather .forecast a:hover {
+    text-decoration: underline
+}
+/*/ === Home Carousel === /*/
+
+/*/ see responsive jcarousel module for CSS  /*/
+
+/*/ === Most popular on FoB === /*/
+
+
+    #block-views-most-popular-block {background: #ebebeb;padding-bottom:0.25em}
+
+#block-views-most-popular-block ul,
+#block-views-most-popular-block li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+#block-views-most-popular-block .view-content {
+    margin-left: -1.5%;
+    width: 101.5%;
+}
+#block-views-most-popular-block .view-content li {
+    display: inline-block;
+    font-size: 1.2em;
+
+     padding-top: 0.25em;
+    line-height: 1.3;
+    margin-left: 1.5%
+}
+#block-views-most-popular-block .view-content a {}
+#block-views-most-popular-block .view-content a:link,
+#block-views-most-popular-block .view-content a:visited {
+    color: #666;
+    text-decoration: none
+}
+#block-views-most-popular-block .view-content a:hover,
+#block-views-most-popular-block .view-content a:focus {
+    color: #aa1054;
+    text-decoration: underline
+}
+
+
+/*/ === Partnership resources === /*/
+
+
+#block-block-2 h2  {background:#666}
+
+#block-block-2 p {margin:0}
+#block-block-2 p a  {
+    display:block;
+    width:100%;
+    height:100px;
+background: #ebebeb  url("/files/imageblock/plan-image.png") no-repeat  center center;
+    background-image: url(/files/imageblock/plan-image.png);
+    text-indent: -999px;font-size:0
+}
+
+
+
+/*/ ==== RESPONSIVE OVERRIDERS ==== /*/
+
+@media all and (max-width: 768px) {
+    #flexslider-1 .banner-text {
+        float: none;
+        width: 94%;
+        padding: 10px 3%;
+        position: relative;
+        background: #d4d4d4
+    }
+    #flexslider-1 {
+        background: #d4d4d4;
+        padding-bottom: 20px
+    }
+    #flexslider-1 .flex-control-nav {
+        bottom: 10px;
+    }
+}
+@media all and (max-width: 600px) {
+    .flex-control-paging li a {
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 19px;
+        border-radius: 18px;
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+}

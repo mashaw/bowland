@@ -1,0 +1,179 @@
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+
+
+#block-nice-menus-1   {margin:0;clear:both}
+
+ul.nice-menu,
+ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+ul.nice-menu  {}
+
+ul.nice-menu li {border: none;width:25%;
+    display:block; /* LTR */
+  background-color: #fff;
+    margin: 0 1% 3px 1%
+}
+ul.nice-menu-down > li.first.odd  {width:25%}
+ul.nice-menu-down > li.even       {width:20%}
+ul.nice-menu-down > li.even.last  {width:25%}
+
+ul.nice-menu li li {margin: 0}
+
+
+ul.nice-menu a {display:block;
+  padding: 4px 9px ;
+    text-decoration: none;
+}
+
+
+ul.nice-menu ul a {
+color:#434343!important;
+      padding: 2px 9px; 
+}
+
+ul.nice-menu a.enjoying      {color:#f58345!important}
+ul.nice-menu a.looking       {color:#aa1054!important}
+ul.nice-menu a.understanding {color:#839c85!important}
+
+ul.nice-menu ul li.active-trail > a   {color:#000!important;background:#b5b5b5;text-decoration: none;}
+
+ul.nice-menu ul li.active-trail a.active    {color:#000!important;background:#b5b5b5;text-decoration: none;cursor:default}
+
+ul.nice-menu a:hover  ,
+ul.nice-menu a:focus  ,
+ul.nice-menu ul li.active-trail > a:hover {color:#000!important;text-decoration:underline}
+
+ul.nice-menu ul li.active-trail a.active:hover {text-decoration: none;cursor:default} 
+
+ul.nice-menu ul {
+  top: 1.5em;
+  left: 0; /* LTR */
+border: none;
+  margin-right: 0; /* LTR */
+}
+
+ul.nice-menu ul li {
+  width: 100%;
+    display:block;
+    margin: 0
+}
+
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {width:100%;
+  float: left; /* LTR */
+  border: 0;
+}
+
+ul.nice-menu-down li {font-size:1.5em;
+  border: none;
+
+}
+
+
+ul.nice-menu-down li li {font-size:0.66em;
+    background:#ccc;
+    width:100%
+   /* LTR */
+}
+ul.nice-menu-down li li li {font-size:1em;}
+
+ul.nice-menu-down ul {
+  left: 0;
+   width:100% /* LTR */
+}
+
+ul.nice-menu-down ul li {
+  clear: both;
+}
+
+ul.nice-menu-down li ul li ul {
+  left: 100%; /* LTR */
+  top:0;
+    width:100%
+}
+
+ul.nice-menu-down .menuparent a {
+ padding-right:0.25em; /* LTR */
+}
+
+
+ul.nice-menu-down ul  .menuparent > a:after {
+    color:#f5f5f5;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    color:#666;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f0da";
+    padding-right:0;
+    float:right
+
+}
+ul.nice-menu-down ul  .menuparent > a:hover:after ,
+ul.nice-menu ul li.active-trail > a:after     {    color:#000;}
+
+
+
+ul.nice-menu-down li.menuparent {
+  background: #fff /* LTR */
+}
+
+ul.nice-menu-down li.menuparent:hover  ,
+ul.nice-menu-down li.menuparent:focus  {
+    background:#ccc;
+    color:#fff!important
+}
+
+ul.nice-menu-down li li.menuparent {
+            background:#ccc;/* LTR */
+}
+
+ul.nice-menu-down li li.menuparent:hover ,
+ul.nice-menu-down li li.menuparent:focus {
+    background:#ccc;
+    width:100%
+}
+
+@media all and (max-width: 960px) {
+ul.nice-menu li {
+    margin: 0 0%
+}
+    ul.nice-menu li {border: none;width:25%;
+    display:block; /* LTR */
+  background-color: #fff;
+    margin: 0 0%
+}
+ul.nice-menu-down > li.first.odd  {width:30%}
+ul.nice-menu-down > li.even       {width:30%}
+ul.nice-menu-down > li.odd        {width:30%}
+ul.nice-menu-down > li.even.last  {width:30%}
+    
+    
+}

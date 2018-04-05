@@ -1,0 +1,73 @@
+/* --- Row grids --- */
+.content_row {
+    width:101.5%;
+    margin-left:-1.5%;
+    clear:both
+}
+
+.content_row .block {
+    float:left
+}
+
+.content_row .block,.content_row .one-column {
+    width:23.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+.content_row .two-column {
+    width:48.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+.content_row .three-column {
+    width:73.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+.content_row .four-column {
+    width:98.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+ .content_row .block img {width:100%}   
+
+
+@media all and (max-width: 960px) {
+
+}
+
+@media all and (max-width: 768px) {
+.content_row .block,.content_row .one-column,.content_row .two-column {
+    width:48.5%;
+    margin-left:1.5%;
+    float:left
+}
+ .content_row .block img {width:100%}   
+    
+.content_row .two-column {
+    width:98.5%;
+    margin-left:1.5%;
+    float:left
+}
+
+.content_row .three-column,.content_row .four-column {
+    width:98.5%;
+    margin-left:1.5%;
+    float:left
+}
+}
+
+@media all and (max-width: 480px) {
+.content_row .one-column,
+    .content_row .two-column,
+    .content_row .three-column,
+    .content_row .four-column {
+    width:98.5%;
+    margin-left:1.5%;
+    float:left
+}
+}
